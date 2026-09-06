@@ -20,8 +20,8 @@ def main():
     print(f"Evaluating {len(samples)} unpaired feedback samples (Loss Aversion lambda={kto.lambda_d}):\n")
     for idx, s in enumerate(samples):
         res = kto.evaluate_sample(s["pi"], s["ref"], s["desirable"])
-        label = "👍 DESIRABLE" if s["desirable"] else "👎 UNDESIRABLE"
-        print(f"Sample #{idx + 1} [{label}]:")
+        label = "[DESIRABLE]" if s["desirable"] else "[UNDESIRABLE]"
+        print(f"Sample #{idx + 1} {label}:")
         print(f"  Implicit Reward: {res['implicit_reward']:+.4f}")
         print(f"  Utility:         {res['utility']:+.4f}")
         print(f"  KTO Loss:        {res['kto_loss']:.4f}")
