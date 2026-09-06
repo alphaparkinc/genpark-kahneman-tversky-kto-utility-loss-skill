@@ -1,0 +1,15 @@
+{
+  "name": "genpark-kahneman-tversky-kto-utility-loss-skill",
+  "version": "1.0.0",
+  "description": "KTO loss evaluator aligning agents directly on unpaired binary feedback using prospect theory loss aversion.",
+  "author": "GenPark AI",
+  "license": "Apache-2.0",
+  "dependencies": [],
+  "keywords": [
+    "kto",
+    "kahneman-tversky",
+    "loss-aversion",
+    "unpaired-alignment",
+    "prospect-theory"
+  ]
+}
